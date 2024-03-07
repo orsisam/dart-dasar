@@ -10,6 +10,6 @@ void main() {
 
 void checkAccount(int amount) {
   if (amount < 0) {
-    throw new FormatException();
+    throw FormatException();
   }
 }

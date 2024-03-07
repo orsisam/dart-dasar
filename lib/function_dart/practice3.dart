@@ -27,10 +27,10 @@ void greetings({required String name}) => print("Hello Mr./Ms. $name.");
 // 4. Generate random password
 String generateRandomPassword({required int length}) {
   var random = Random();
-  const String _chars =
+  const String chars =
       "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890!@#\$%^&*()`~-_+=";
   String randomPassword =
-      List.generate(length, (index) => _chars[random.nextInt(_chars.length)])
+      List.generate(length, (index) => chars[random.nextInt(chars.length)])
           .join();
 
   return randomPassword;

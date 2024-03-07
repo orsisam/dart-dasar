@@ -1,16 +1,18 @@
 void main() {
   // Print each Item of List Using Foreach
   List<String> footballPlayers = ['Ronaldo', 'Messi', 'Neymar', 'Delpiero'];
-  footballPlayers.forEach((names) => print(names));
+  for (var names in footballPlayers) {
+    print(names);
+  }
 
   print("=============================================");
 
   // Print Each Total and Average of List
   List<int> numbers = [1, 2, 3, 4, 5];
   int total = 0;
-  numbers.forEach((element) {
+  for (var element in numbers) {
     total += element;
-  });
+  }
   print("Total is $total.");
   double avg = total / (numbers.length);
   print("Average is $avg.");
